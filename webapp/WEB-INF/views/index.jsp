@@ -47,8 +47,11 @@
 				Use this document as a way to quickly start any new project.<br>
 				All you get is this text and a mostly barebones HTML document.
 			</p>
+				<div class="clear"></div>
 		</div>
+		
 	</div>
+
 	<!-- Bootstrap core JavaScript -->
 
 	<script src="resources/js/jquery-2.1.4.min.js"></script>

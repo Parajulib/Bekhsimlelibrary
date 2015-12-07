@@ -24,7 +24,8 @@ public class BookDaoImpl extends ConnectionUtil implements BookDao {
 
 	@SuppressWarnings("unchecked")
 	public List<Book> getAllBooks() {
-		return getSession().createQuery("FROM Book").list();
+		//return getSession().createQuery("FROM Book").list();
+		return getSession().createCriteria(Book.class).list();
 	}
 
 	public void deleteBook(Book book) {

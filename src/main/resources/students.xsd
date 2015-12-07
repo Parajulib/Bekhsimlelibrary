@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://bharat.com/soap"
+           targetNamespace="http://bharat.com/soap" elementFormDefault="qualified">
+    <xs:element name="getStudentRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="COMPANYID" type="xs:int"/>
+                <xs:element name="FINANCIAL_STATEMENT_DATE" type="xs:string"/>
+                <xs:element name="COUNTRYISOCODE" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="getStudentResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TOTAL_ASSETS_IMPUTED" type="xs:int"/>
+	            <xs:element name="TOTAL_ASSETS_SENSITIVITY" type="xs:string"/>
+	            <xs:element name="TOTAL_ASSETS_PERCONTR" type="xs:int"/>
+	            <xs:element name="LOAN_OVER_DEPOSITS_IMPUTED" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema> 

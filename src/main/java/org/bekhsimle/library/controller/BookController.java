@@ -36,7 +36,7 @@ public class BookController {
 	@RequestMapping(value="/book/add")
 	public String addBook(){
 		
-		return "admin/book/addbook";
+		return "admin/home";
 	}
 	@RequestMapping(value="/listBook")
 	public String listBook(){

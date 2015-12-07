@@ -2,11 +2,11 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(function($routeProvider){
 	$routeProvider.
 	when('/', {
-		templateUrl: 'index',
+		templateUrl: 'index.jsp',
 		controller:'AppCtrl'
 	}).
 	when('/home', {
-		templateUrl: 'index.jsp',
+		templateUrl: 'home.jsp',
 		controller:'AppCtrl'
 	}).
 	when('/login', {
@@ -14,7 +14,11 @@ myApp.config(function($routeProvider){
 		controller:'AppCtrl'
 	}).
 	when('/book/add', {
-		templateUrl: 'addbook.jsp',
+		templateUrl: 'admin/book/addbook.jsp',
+		controller:'AppCtrl'
+	}).
+	when('/lisbook', {
+		templateUrl: 'books.jsp',
 		controller:'AppCtrl'
 	}).
 	when('#', {
